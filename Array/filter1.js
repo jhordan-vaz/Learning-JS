@@ -6,6 +6,10 @@ const products = [
 ]
 
 console.log(products.filter(function(p) {
-    return true
+    return p.fragile > false 
 }))
 
+const expensive = products => products.price >= 2000
+const fragile = products => products.fragile
+
+console.log(products.filter(expensive).filter(fragile))
