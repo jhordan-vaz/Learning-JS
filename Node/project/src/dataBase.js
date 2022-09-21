@@ -10,7 +10,7 @@ const products = {} // meu OO
 
 function productSave(product) {
      if (!product.id) product.id = sequence.id
-     product[product.id] = product //chave é o ID do produto | valor é o product
+     products[product.id] = product //chave é o ID do produto | valor é o product
      return product
 }
 
