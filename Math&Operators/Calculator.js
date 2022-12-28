@@ -1,14 +1,9 @@
-const prompt = require('prompt-sync')({signit: false});
+const prompt = require('prompt-sync')({sigint: false});
 
 let a;
 let b;
 let result;
 let operation;
-
-let addition = "+";
-let subtratcion = "-";
-let multiplication = "*";
-let division = "/";
 
 console.log("Welcom to the calculator!");
 console.log("Please, choose an operation below:");
@@ -18,28 +13,31 @@ console.log("Addition + , Subtraction - , Division / , Multiplication *.");
 operation = prompt("Operation: ");
 console.log(`Operation: ${operation} was selected!`);
 
-console.log("type the number a:")
-console.log("type the number b:")
-
-a = prompt()
-b = prompt()
+const soma = function(a, b) {
+  return a + b;
+}
 
 if (operation = "+"){
-    return a + b;
+    return result = a + b;
 }
 
 if (operation = "-"){
-  return a + b;
+  return result = a - b;
 }
 
 if (operation = "/"){
-  return a + b;
+  return result = a / b;
 }
 
 if (operation = "*"){
-  return a + b;
+  return result = a * b;
 }
 
-console.log(operation)
+console.log("type the number a:")
+a = prompt()
+console.log("type the number b:")
+b = prompt()
+
+console.log(result)
 
 
