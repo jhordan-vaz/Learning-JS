@@ -1,29 +1,45 @@
-function sum(a, b) {
+const prompt = require('prompt-sync')({signit: false});
+
+let a;
+let b;
+let result;
+let operation;
+
+let addition = "+";
+let subtratcion = "-";
+let multiplication = "*";
+let division = "/";
+
+console.log("Welcom to the calculator!");
+console.log("Please, choose an operation below:");
+
+console.log("Addition + , Subtraction - , Division / , Multiplication *.");
+
+operation = prompt("Operation: ");
+console.log(`Operation: ${operation} was selected!`);
+
+console.log("type the number a:")
+console.log("type the number b:")
+
+a = prompt()
+b = prompt()
+
+if (operation = "+"){
+    return a + b;
+}
+
+if (operation = "-"){
   return a + b;
-} 
-
-function minus(a, b) {
-  return a - b;
 }
 
-function mult(a, b) {
-  return a * b;
+if (operation = "/"){
+  return a + b;
 }
 
-function divis(a, b) {
-  return a / b;
+if (operation = "*"){
+  return a + b;
 }
 
-let result = a, b;;
+console.log(operation)
 
-sum (16, 25);
-console.log(sum)
 
-minus(25, - 25);
-console.log(minus)
-
-mult(3, 25);
-console.log(mult)
-
-divis(6, 2);
-console.log(result)
