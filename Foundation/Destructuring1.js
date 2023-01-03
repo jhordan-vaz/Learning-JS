@@ -8,6 +8,6 @@ const dadosPessoais = {
   }
 
 
-const {nome, idade, endereco ,numeroCasa, rua} = dadosPessoais;
+const {nome, idade, endereco ,numeroCasa, rua} = dadosPessoais; 
 console.log("Dados pessoais: ");
 console.log("nome:" + nome, "Idade:" + idade,  " Endereço:" + endereco, "Numero da casa: " + numeroCasa, " Rua: " + rua);
